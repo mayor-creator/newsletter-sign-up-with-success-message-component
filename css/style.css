@@ -68,10 +68,6 @@ button:hover {
 	background: linear-gradient(180deg, #ff6b3a, #ff527c);
 }
 
-.main_signUp {
-	/* display: none; */
-}
-
 .contentContainer {
 	display: flex;
 	flex-direction: column;
@@ -155,6 +151,15 @@ button:hover {
 		width: 23.5rem;
 	}
 
+	.main_signUp,
+	.main_success {
+		position: fixed;
+		inset: 0;
+		width: fit-content;
+		height: fit-content;
+		margin: auto;
+	}
+
 	.mainWrapper {
 		background-color: var(--white);
 		border-radius: 2.25rem;
@@ -180,7 +185,6 @@ button:hover {
 		min-height: 32.5rem;
 		width: min(100% - 2rem, 31.5rem);
 		margin-inline: auto;
-		margin-top: 12.5rem;
 		align-items: flex-start;
 		justify-content: center;
 		padding: 1.5rem;
