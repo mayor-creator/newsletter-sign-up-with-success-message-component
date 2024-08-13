@@ -6,40 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 
 <body>
   <!-- Sign-up form start -->
-  <main>
-    <div>
-      <picture>
-        <source media="(min-width:47.5em)" srcset="./assets/images/illustration-sign-up-desktop.svg"
-          sizes="(min-width:47.5em) 100vw">
-        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration of form sign up">
-      </picture>
-    </div>
-    <div>
-      <h1>Stay updated!</h1>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p>
-      <div>
-        <div>
-          <img src="./assets/images/icon-list.svg" alt="orange check mark">
-          <span>Product discovery and building what matters</span>
-        </div>
-        <div>
-          <img src="./assets/images/icon-list.svg" alt="orange check mark">
-          <span>Measuring to ensure updates are a success</span>
-        </div>
-        <div>
-          <img src="./assets/images/icon-list.svg" alt="orange check mark">
-          <span>And much more!</span>
+  <main class="main">
+    <div class="mainWrapper">
+      <div class="imageContainer">
+        <picture>
+          <source media="(min-width:47.5em)" srcset="./assets/images/illustration-sign-up-desktop.svg"
+            sizes="(min-width:47.5em) 100vw">
+          <img class="image" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration of form sign up">
+        </picture>
+      </div>
+      <div class="contentContainer">
+        <h1>Stay updated!</h1>
+        <p class="information">Join 60,000+ product managers receiving monthly updates on:</p>
+        <div class="descriptionContainer">
+          <div class="iconsContainer">
+            <img class="icon" src="./assets/images/icon-list.svg" alt="orange check mark">
+            <span>Product discovery and building what matters</span>
+          </div>
+          <div class="iconsContainer">
+            <img class="icon" src="./assets/images/icon-list.svg" alt="orange check mark">
+            <span>Measuring to ensure updates are a success</span>
+          </div>
+          <div class="iconsContainer">
+            <img class="icon" src="./assets/images/icon-list.svg" alt="orange check mark">
+            <span>And much more!</span>
+          </div>
         </div>
         <form>
           <div>
             <label for="email">Email address</label>
+            <span id="email-error" class="error-message">Valid email required</span>
             <input type="email" name="email" id="email" placeholder="email@company.com" required>
-            <span id="email-error">Valid email required</span>
             <button type="submit">Subscribe to monthly newsletter</button>
           </div>
         </form>
@@ -49,13 +53,18 @@
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
-  <main>
-    <div>
-      <img src="./assets/images/icon-success.svg" alt="orange check mark" height="64" width="64">
-      <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.</p>
-      <button>Dismiss message</button>
+  <main id="successContainer" class="main_success">
+    <div class="wrapper">
+      <div class="informationContainer">
+        <img class="main__checkMark" src="./assets/images/icon-success.svg" alt="orange check mark" height="64"
+          width="64">
+        <h1 class="main__title">Thanks for subscribing!</h1>
+        <p class="main__message">A confirmation email has been sent to ash@loremcompany.com.
+          Please open it and click the button inside to confirm your subscription.</p>
+      </div>
+      <div class="buttonContainer">
+        <button type="submit">Dismiss message</button>
+      </div>
     </div>
   </main>
   <!-- Success message end -->
