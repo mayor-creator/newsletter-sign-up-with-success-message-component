@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script defer src="./app/index.js"></script>
 </head>
 
 <body>
-  <main id="singUp" class="main_signUp">
+  <main id="signUp" class="main_signUp">
     <div class="mainWrapper">
       <div class="imageContainer">
         <picture>
@@ -41,9 +42,9 @@
         <form>
           <div>
             <label for="email">Email address</label>
-            <span id="email-error" class="error-message">Valid email required</span>
+            <span id="emailError" class="error-message">Valid email required</span>
             <input type="email" name="email" id="email" placeholder="email@company.com" required>
-            <button type="submit">Subscribe to monthly newsletter</button>
+            <button id="submit" type="submit">Subscribe to monthly newsletter</button>
           </div>
         </form>
       </div>
@@ -56,12 +57,11 @@
         <img class="main__checkMark" src="./assets/images/icon-success.svg" alt="orange check mark" height="64"
           width="64">
         <h1 class="main__title">Thanks for subscribing!</h1>
-        <p class="main__message">A confirmation email has been sent to <strong
-            id="email-value">ash@loremcompany.com</strong>.
+        <p class="main__message">A confirmation email has been sent to <strong id="emailValue"></strong>.
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
       <div class="buttonContainer">
-        <button type="submit">Dismiss message</button>
+        <button id="dismiss" type="submit">Dismiss message</button>
       </div>
     </div>
   </main>
