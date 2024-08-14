@@ -32,7 +32,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./newsLetterDesktop.png)
+![Mobile](./newsLetterMobile.png)
 
 ### Links
 
@@ -50,27 +51,32 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
 ```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
+const validateEmail = () => {
+	const emailValid = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/g;
+	const valid = emailValid.test(userEmailInput.value);
+	if (
+		!valid ||
+		userEmailInput.value.length === 0 ||
+		userEmailInput.value.trim() === ""
+	) {
+		errorMessage.style.display = "inline";
+		userEmailInput.classList.add("errorMessageInput");
+	} else {
+		successContainer.hidden = false;
+		signUpContainer.hidden = true;
+		userEmailValue.innerText = userEmailInput.value;
+		errorMessage.style.display = "none";
+		userEmailInput.classList.remove("errorMessageInput");
+	}
+	document.getElementById(".form").reset();
 };
 ```
 
 ### Continued development
+
+- Building more JS projects
+- Form validations
 
 ### Useful resources
 
