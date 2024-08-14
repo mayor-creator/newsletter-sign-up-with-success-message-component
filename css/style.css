@@ -115,6 +115,7 @@ button:hover {
 .errorMessageInput {
 	color: var(--tomato);
 	border: 1px solid #ff6155;
+	background-color: #ff615526;
 }
 
 /* media query */
