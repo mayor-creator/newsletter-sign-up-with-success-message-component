@@ -99,10 +99,6 @@ button:hover {
 }
 
 /* success style container */
-.main_success {
-	display: none;
-}
-
 .wrapper {
 	display: flex;
 	align-items: center;
@@ -116,13 +112,10 @@ button:hover {
 	padding-top: 7.5rem;
 }
 
-/*
-.error-message-input {
-  color: var(--color-vermellion);
-  border: 1px solid #FF6155;
+.errorMessageInput {
+	color: var(--tomato);
+	border: 1px solid #ff6155;
 }
-
-*/
 
 /* media query */
 @media (max-width: 30em) {
@@ -144,11 +137,6 @@ button:hover {
 @media (min-width: 64.063em) {
 	body {
 		background-color: var(--charcoalGrey);
-	}
-
-	input,
-	button {
-		width: 23.5rem;
 	}
 
 	.main_signUp,
