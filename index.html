@@ -39,11 +39,11 @@
             <span>And much more!</span>
           </div>
         </div>
-        <form>
+        <form class="formContainer" id="form">
           <div>
             <label for="email">Email address</label>
             <span id="emailError" class="error-message">Valid email required</span>
-            <input type="email" name="email" id="email" placeholder="email@company.com" required>
+            <input type="email" name="email" id="email" placeholder="email@company.com">
             <button id="submit" type="submit">Subscribe to monthly newsletter</button>
           </div>
         </form>
@@ -51,7 +51,7 @@
     </div>
   </main>
 
-  <main id="successContainer" class="main_success">
+  <main id="successContainer" class="main_success" hidden>
     <div class="wrapper">
       <div class="informationContainer">
         <img class="main__checkMark" src="./assets/images/icon-success.svg" alt="orange check mark" height="64"
